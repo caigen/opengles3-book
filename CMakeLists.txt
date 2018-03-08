@@ -4,6 +4,9 @@ project( ES3_Book )
 include_directories( External/Include )
 include_directories( Common/Include )
 
+set (OPENGLES3_LIBRARY "../../External/lib/x86_32/Lib/libGLESv2" )
+set (EGL_LIBRARY "../../External/lib/x86_32/Lib/libEGL" )
+
 find_library( OPENGLES3_LIBRARY GLESv2 "OpenGL ES v3.0 library")
 find_library( EGL_LIBRARY EGL "EGL 1.4 library" )
  
