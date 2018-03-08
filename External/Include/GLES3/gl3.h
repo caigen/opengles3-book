@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 /*
-** Copyright (c) 2013 The Khronos Group Inc.
+** Copyright (c) 2013-2014 The Khronos Group Inc.
 **
 ** Permission is hereby granted, free of charge, to any person obtaining a
 ** copy of this software and/or associated documentation files (the
@@ -33,15 +33,17 @@ extern "C" {
 ** used to make the header, and the header can be found at
 **   http://www.opengl.org/registry/
 **
-** Khronos $Revision$ on $Date$
+** Khronos $Revision: 26320 $ on $Date: 2014-04-17 03:07:07 -0700 (Thu, 17 Apr 2014) $
 */
 
 #include <GLES3/gl3platform.h>
 
+/* Generated on date 20140417 */
+
 /* Generated C header for:
  * API: gles2
  * Profile: common
- * Versions considered: [23]\.[0-9]
+ * Versions considered: 2\.[0-9]|3.0
  * Versions emitted: .*
  * Default extensions included: None
  * Additional extensions included: _nomatch_^
@@ -430,12 +432,12 @@ GL_APICALL void GL_APIENTRY glGetActiveAttrib (GLuint program, GLuint index, GLs
 GL_APICALL void GL_APIENTRY glGetActiveUniform (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLint *size, GLenum *type, GLchar *name);
 GL_APICALL void GL_APIENTRY glGetAttachedShaders (GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders);
 GL_APICALL GLint GL_APIENTRY glGetAttribLocation (GLuint program, const GLchar *name);
-GL_APICALL void GL_APIENTRY glGetBooleanv (GLenum pname, GLboolean *params);
+GL_APICALL void GL_APIENTRY glGetBooleanv (GLenum pname, GLboolean *data);
 GL_APICALL void GL_APIENTRY glGetBufferParameteriv (GLenum target, GLenum pname, GLint *params);
 GL_APICALL GLenum GL_APIENTRY glGetError (void);
-GL_APICALL void GL_APIENTRY glGetFloatv (GLenum pname, GLfloat *params);
+GL_APICALL void GL_APIENTRY glGetFloatv (GLenum pname, GLfloat *data);
 GL_APICALL void GL_APIENTRY glGetFramebufferAttachmentParameteriv (GLenum target, GLenum attachment, GLenum pname, GLint *params);
-GL_APICALL void GL_APIENTRY glGetIntegerv (GLenum pname, GLint *params);
+GL_APICALL void GL_APIENTRY glGetIntegerv (GLenum pname, GLint *data);
 GL_APICALL void GL_APIENTRY glGetProgramiv (GLuint program, GLenum pname, GLint *params);
 GL_APICALL void GL_APIENTRY glGetProgramInfoLog (GLuint program, GLsizei bufSize, GLsizei *length, GLchar *infoLog);
 GL_APICALL void GL_APIENTRY glGetRenderbufferParameteriv (GLenum target, GLenum pname, GLint *params);
@@ -899,7 +901,7 @@ GL_APICALL GLboolean GL_APIENTRY glIsSync (GLsync sync);
 GL_APICALL void GL_APIENTRY glDeleteSync (GLsync sync);
 GL_APICALL GLenum GL_APIENTRY glClientWaitSync (GLsync sync, GLbitfield flags, GLuint64 timeout);
 GL_APICALL void GL_APIENTRY glWaitSync (GLsync sync, GLbitfield flags, GLuint64 timeout);
-GL_APICALL void GL_APIENTRY glGetInteger64v (GLenum pname, GLint64 *params);
+GL_APICALL void GL_APIENTRY glGetInteger64v (GLenum pname, GLint64 *data);
 GL_APICALL void GL_APIENTRY glGetSynciv (GLsync sync, GLenum pname, GLsizei bufSize, GLsizei *length, GLint *values);
 GL_APICALL void GL_APIENTRY glGetInteger64i_v (GLenum target, GLuint index, GLint64 *data);
 GL_APICALL void GL_APIENTRY glGetBufferParameteri64v (GLenum target, GLenum pname, GLint64 *params);
